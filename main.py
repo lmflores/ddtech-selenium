@@ -1,15 +1,13 @@
 import time
-from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.alert import Alert
-
-driver = webdriver.Chrome(executable_path="D:\Documents\chromedriver.exe")
-
-
+# Avoid site blocking by cloudfire
+import undetected_chromedriver  as uc
+driver = uc.Chrome()
   ###  REGISTRO ##
 driver.get("https://ddtech.mx/")
 driver.maximize_window()
-time.sleep(1)
+time.sleep(10)
 driver.find_element(By.XPATH, '/html/body/header/div[1]/div/div/div[3]/ul/li[3]/a/font/font').click()
 
 time.sleep(1)
