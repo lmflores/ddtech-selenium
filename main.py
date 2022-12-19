@@ -69,8 +69,8 @@ def setup_shipment_data():
     driver.find_element(By.XPATH, '/html/body/div[2]/div/div/div[1]/form/div[11]/div/button').click()
     # go back to main page
     driver.find_element(By.XPATH, "/html/body/header/div[2]/div/div/div/div[1]/a").click()
-## Add cart items ##
 
+## Add cart items ##
 articles = {
             'Accesorios': 'Mouse Gamer Logitech G502 X Lightspeed / Óptico / Blanco / Inalámbrico / 25.600DPI / Interruptores Lightforce / 910-006188',
             'Componentes': 'Tarjeta Madre Asus X670 ROG Strix X670E-I Gaming / AMD / AM5 / Ryzen 7000 / Mini-ITX / WiFi 6E / PCIe 5.0 / DDR5 / botón EZ Mode PBO / 2X M.2 / 2X USB4 Tipo C / ROG STRIX X670E-I GAMING WIFI',
@@ -90,9 +90,13 @@ def add_cart():
         time.sleep(2)
         driver.find_element(By.XPATH, "//a[contains(text(),\' Agregar al carrito\')]").click()
         time.sleep(2)
-        driver.find_element(By.XPATH, "/html/body/header/div[2]/div/div/div/div[1]/a").click()
+        fp = open('Productos Comprados.txt', 'a')
+        fp.write(f'--{category.upper()}--\nNombre: {name}\nPrecio: {driver.find_element(By.CLASS_NAME, "price").text}\n\n')
+        fp.close()
         time.sleep(2)
-       
+        driver.find_element(By.XPATH, "/html/body/header/div[2]/div/div/div/div[1]/a").click()
+        time.sleep(2)     
+
 
 def show_cart():
     driver.find_element(By.XPATH, "/html/body/header/div[2]/div/div/div/div[2]/ul[2]/li[2]/a").click()

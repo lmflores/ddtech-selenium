@@ -1,0 +1,19 @@
+--ACCESORIOS--
+Nombre: Mouse Gamer Logitech G502 X Lightspeed / �ptico / Blanco / Inal�mbrico / 25.600DPI / Interruptores Lightforce / 910-006188
+Precio: $2,899.00
+
+--COMPONENTES--
+Nombre: Tarjeta Madre Asus X670 ROG Strix X670E-I Gaming / AMD / AM5 / Ryzen 7000 / Mini-ITX / WiFi 6E / PCIe 5.0 / DDR5 / bot�n EZ Mode PBO / 2X M.2 / 2X USB4 Tipo C / ROG STRIX X670E-I GAMING WIFI
+Precio: $9,799.00
+
+--ALMACENAMIENTO--
+Nombre: Memoria USB Tipo C 256GB / ADATA ELITE UE800 / Gris - Negro / AELI-UE800-256G-CSG
+Precio: $899.00
+
+--SOFTWARE--
+Nombre: Licencia Microsoft Office Hogar y Estudiantes 2021 Licencia Descargable - Multi Lenguaje 1 PC/Mac - 79G-0534
+Precio: $2,299.00
+
+--CELULARES--
+Nombre: Smartband Huawei Band 6 B10 Negro Grafito / Android / Bluetooth / Resistente al agua / FRA-B19B
+Precio: $999.00
